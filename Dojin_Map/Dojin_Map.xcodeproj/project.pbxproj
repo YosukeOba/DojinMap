@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33599C8623FC18E500D71658 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33599C8523FC18E500D71658 /* CircleViewController.swift */; };
+		3394D81323EFBD96009390CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D81223EFBD96009390CA /* AppDelegate.swift */; };
+		3394D81523EFBD96009390CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D81423EFBD96009390CA /* ViewController.swift */; };
+		3394D81823EFBD96009390CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3394D81623EFBD96009390CA /* Main.storyboard */; };
+		3394D81A23EFBD98009390CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3394D81923EFBD98009390CA /* Assets.xcassets */; };
+		3394D81D23EFBD98009390CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3394D81B23EFBD98009390CA /* LaunchScreen.storyboard */; };
+		3394D82823EFBD98009390CA /* Dojin_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D82723EFBD98009390CA /* Dojin_MapTests.swift */; };
+		3394D83323EFBD98009390CA /* Dojin_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D83223EFBD98009390CA /* Dojin_MapUITests.swift */; };
+		33B9039023F1837A004CBA1A /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9038F23F1837A004CBA1A /* ModelViewController.swift */; };
+		33B9039223F3BEEE004CBA1A /* circle.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33B9039123F3BEEE004CBA1A /* circle.csv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3394D82423EFBD98009390CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3394D80723EFBD96009390CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3394D80E23EFBD96009390CA;
+			remoteInfo = Dojin_Map;
+		};
+		3394D82F23EFBD98009390CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3394D80723EFBD96009390CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3394D80E23EFBD96009390CA;
+			remoteInfo = Dojin_Map;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33599C8523FC18E500D71658 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		3394D80F23EFBD96009390CA /* Dojin_Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dojin_Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3394D81223EFBD96009390CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3394D81423EFBD96009390CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3394D81723EFBD96009390CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3394D81923EFBD98009390CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3394D81C23EFBD98009390CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3394D81E23EFBD98009390CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3394D82323EFBD98009390CA /* Dojin_MapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dojin_MapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3394D82723EFBD98009390CA /* Dojin_MapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dojin_MapTests.swift; sourceTree = "<group>"; };
+		3394D82923EFBD98009390CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3394D82E23EFBD98009390CA /* Dojin_MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dojin_MapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3394D83223EFBD98009390CA /* Dojin_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dojin_MapUITests.swift; sourceTree = "<group>"; };
+		3394D83423EFBD98009390CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B9038F23F1837A004CBA1A /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
+		33B9039123F3BEEE004CBA1A /* circle.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = circle.csv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3394D80C23EFBD96009390CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3394D82023EFBD98009390CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3394D82B23EFBD98009390CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3394D80623EFBD96009390CA = {
+			isa = PBXGroup;
+			children = (
+				3394D81123EFBD96009390CA /* Dojin_Map */,
+				3394D82623EFBD98009390CA /* Dojin_MapTests */,
+				3394D83123EFBD98009390CA /* Dojin_MapUITests */,
+				3394D81023EFBD96009390CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3394D81023EFBD96009390CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3394D80F23EFBD96009390CA /* Dojin_Map.app */,
+				3394D82323EFBD98009390CA /* Dojin_MapTests.xctest */,
+				3394D82E23EFBD98009390CA /* Dojin_MapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3394D81123EFBD96009390CA /* Dojin_Map */ = {
+			isa = PBXGroup;
+			children = (
+				33B9039123F3BEEE004CBA1A /* circle.csv */,
+				3394D81223EFBD96009390CA /* AppDelegate.swift */,
+				3394D81423EFBD96009390CA /* ViewController.swift */,
+				3394D81623EFBD96009390CA /* Main.storyboard */,
+				33599C8523FC18E500D71658 /* CircleViewController.swift */,
+				33B9038F23F1837A004CBA1A /* ModelViewController.swift */,
+				3394D81923EFBD98009390CA /* Assets.xcassets */,
+				3394D81B23EFBD98009390CA /* LaunchScreen.storyboard */,
+				3394D81E23EFBD98009390CA /* Info.plist */,
+			);
+			path = Dojin_Map;
+			sourceTree = "<group>";
+		};
+		3394D82623EFBD98009390CA /* Dojin_MapTests */ = {
+			isa = PBXGroup;
+			children = (
+				3394D82723EFBD98009390CA /* Dojin_MapTests.swift */,
+				3394D82923EFBD98009390CA /* Info.plist */,
+			);
+			path = Dojin_MapTests;
+			sourceTree = "<group>";
+		};
+		3394D83123EFBD98009390CA /* Dojin_MapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3394D83223EFBD98009390CA /* Dojin_MapUITests.swift */,
+				3394D83423EFBD98009390CA /* Info.plist */,
+			);
+			path = Dojin_MapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3394D80E23EFBD96009390CA /* Dojin_Map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3394D83723EFBD98009390CA /* Build configuration list for PBXNativeTarget "Dojin_Map" */;
+			buildPhases = (
+				3394D80B23EFBD96009390CA /* Sources */,
+				3394D80C23EFBD96009390CA /* Frameworks */,
+				3394D80D23EFBD96009390CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dojin_Map;
+			productName = Dojin_Map;
+			productReference = 3394D80F23EFBD96009390CA /* Dojin_Map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3394D82223EFBD98009390CA /* Dojin_MapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3394D83A23EFBD98009390CA /* Build configuration list for PBXNativeTarget "Dojin_MapTests" */;
+			buildPhases = (
+				3394D81F23EFBD98009390CA /* Sources */,
+				3394D82023EFBD98009390CA /* Frameworks */,
+				3394D82123EFBD98009390CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3394D82523EFBD98009390CA /* PBXTargetDependency */,
+			);
+			name = Dojin_MapTests;
+			productName = Dojin_MapTests;
+			productReference = 3394D82323EFBD98009390CA /* Dojin_MapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3394D82D23EFBD98009390CA /* Dojin_MapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3394D83D23EFBD98009390CA /* Build configuration list for PBXNativeTarget "Dojin_MapUITests" */;
+			buildPhases = (
+				3394D82A23EFBD98009390CA /* Sources */,
+				3394D82B23EFBD98009390CA /* Frameworks */,
+				3394D82C23EFBD98009390CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3394D83023EFBD98009390CA /* PBXTargetDependency */,
+			);
+			name = Dojin_MapUITests;
+			productName = Dojin_MapUITests;
+			productReference = 3394D82E23EFBD98009390CA /* Dojin_MapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3394D80723EFBD96009390CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = BonscowCompany;
+				TargetAttributes = {
+					3394D80E23EFBD96009390CA = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					3394D82223EFBD98009390CA = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3394D80E23EFBD96009390CA;
+					};
+					3394D82D23EFBD98009390CA = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3394D80E23EFBD96009390CA;
+					};
+				};
+			};
+			buildConfigurationList = 3394D80A23EFBD96009390CA /* Build configuration list for PBXProject "Dojin_Map" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3394D80623EFBD96009390CA;
+			productRefGroup = 3394D81023EFBD96009390CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3394D80E23EFBD96009390CA /* Dojin_Map */,
+				3394D82223EFBD98009390CA /* Dojin_MapTests */,
+				3394D82D23EFBD98009390CA /* Dojin_MapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3394D80D23EFBD96009390CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3394D81D23EFBD98009390CA /* LaunchScreen.storyboard in Resources */,
+				3394D81A23EFBD98009390CA /* Assets.xcassets in Resources */,
+				33B9039223F3BEEE004CBA1A /* circle.csv in Resources */,
+				3394D81823EFBD96009390CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3394D82123EFBD98009390CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3394D82C23EFBD98009390CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3394D80B23EFBD96009390CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3394D81523EFBD96009390CA /* ViewController.swift in Sources */,
+				3394D81323EFBD96009390CA /* AppDelegate.swift in Sources */,
+				33599C8623FC18E500D71658 /* CircleViewController.swift in Sources */,
+				33B9039023F1837A004CBA1A /* ModelViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3394D81F23EFBD98009390CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3394D82823EFBD98009390CA /* Dojin_MapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3394D82A23EFBD98009390CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3394D83323EFBD98009390CA /* Dojin_MapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3394D82523EFBD98009390CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3394D80E23EFBD96009390CA /* Dojin_Map */;
+			targetProxy = 3394D82423EFBD98009390CA /* PBXContainerItemProxy */;
+		};
+		3394D83023EFBD98009390CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3394D80E23EFBD96009390CA /* Dojin_Map */;
+			targetProxy = 3394D82F23EFBD98009390CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3394D81623EFBD96009390CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3394D81723EFBD96009390CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3394D81B23EFBD98009390CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3394D81C23EFBD98009390CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3394D83523EFBD98009390CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3394D83623EFBD98009390CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3394D83823EFBD98009390CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9DE7A9X97;
+				INFOPLIST_FILE = Dojin_Map/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BonscowCompany.Dojin-Map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3394D83923EFBD98009390CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9DE7A9X97;
+				INFOPLIST_FILE = Dojin_Map/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BonscowCompany.Dojin-Map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3394D83B23EFBD98009390CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9DE7A9X97;
+				INFOPLIST_FILE = Dojin_MapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BonscowCompany.Dojin-MapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojin_Map.app/Dojin_Map";
+			};
+			name = Debug;
+		};
+		3394D83C23EFBD98009390CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9DE7A9X97;
+				INFOPLIST_FILE = Dojin_MapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BonscowCompany.Dojin-MapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojin_Map.app/Dojin_Map";
+			};
+			name = Release;
+		};
+		3394D83E23EFBD98009390CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9DE7A9X97;
+				INFOPLIST_FILE = Dojin_MapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BonscowCompany.Dojin-MapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dojin_Map;
+			};
+			name = Debug;
+		};
+		3394D83F23EFBD98009390CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9DE7A9X97;
+				INFOPLIST_FILE = Dojin_MapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BonscowCompany.Dojin-MapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dojin_Map;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3394D80A23EFBD96009390CA /* Build configuration list for PBXProject "Dojin_Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3394D83523EFBD98009390CA /* Debug */,
+				3394D83623EFBD98009390CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3394D83723EFBD98009390CA /* Build configuration list for PBXNativeTarget "Dojin_Map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3394D83823EFBD98009390CA /* Debug */,
+				3394D83923EFBD98009390CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3394D83A23EFBD98009390CA /* Build configuration list for PBXNativeTarget "Dojin_MapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3394D83B23EFBD98009390CA /* Debug */,
+				3394D83C23EFBD98009390CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3394D83D23EFBD98009390CA /* Build configuration list for PBXNativeTarget "Dojin_MapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3394D83E23EFBD98009390CA /* Debug */,
+				3394D83F23EFBD98009390CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3394D80723EFBD96009390CA /* Project object */;
+}
