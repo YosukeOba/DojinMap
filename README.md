@@ -11,7 +11,6 @@ https://user-images.githubusercontent.com/52928718/219948493-213e3bf4-f030-4c67-
 ## 画面遷移
 ### LaunchScreen.storyboard
 ![スクリーンショット 2023-02-19 17 47 06](https://user-images.githubusercontent.com/52928718/219948531-36e6f60c-a1f4-46ef-8401-5c83562b7970.png)
-
 <br>
 ### ViewController.swift
 #### 左ページ（地図）
