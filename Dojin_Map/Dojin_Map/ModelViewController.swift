@@ -18,11 +18,14 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
     @IBOutlet weak var placeNumTextField: UITextField!
     @IBOutlet weak var memoTextField: UITextField!
     @IBOutlet weak var twitterTextField: UITextField!
+    @IBOutlet weak var eventPickerView: UIPickerView!
+    @IBOutlet weak var placeABPickerView: UIPickerView!
+    @IBOutlet weak var ImgImageView: UIImageView!
     @IBAction func circleAddButton(_ sender: Any) {
         if(String(circleTextField.text!) != "" && String(placeWordTextField.text!) != "" && String(placeNumTextField.text!) != "" && Int(placeNumTextField.text!)! != 0) {
-            //twitterIDをチェック
+            // twitterIDをチェック
             if(!isTwitterID(id: twitterTextField.text!)) {
-                //エラー時
+                // エラー時
                 let dialog = UIAlertController(title: "入力エラー", message: "不正なtwitterIDです", preferredStyle: .alert)
                 dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(dialog, animated: true, completion: nil)
@@ -30,7 +33,7 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
 
                 let primaryKey = generatePrimaryKey()
                 circles.append([event, String(circleTextField.text!), String(placeWordTextField.text!), String(placeNumTextField.text!), placeABset, String(memoTextField.text!), String(twitterTextField.text!), primaryKey])
-                //imageが入ってるか確認
+                // imageが入ってるか確認
                 if ImgImageView.image == nil {
                     print("NoImage")
                     saveImage(image: NoImage!, filename: primaryKey)
@@ -49,15 +52,12 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
     }
 
     @IBAction func imgAddButton(_ sender: Any) {
-        let picker = UIImagePickerController() //アルバムを開く処理を呼び出す
+        let picker = UIImagePickerController() // アルバムを開く処理を呼び出す
         picker.sourceType = .photoLibrary
         picker.delegate = self
         present(picker, animated: true)
         self.present(picker, animated: true, completion: nil)
     }
-    @IBOutlet weak var eventPickerView: UIPickerView!
-    @IBOutlet weak var placeABPickerView: UIPickerView!
-    @IBOutlet weak var ImgImageView: UIImageView!
 
     let viewcontroller = ViewController();
     let events = ["C98 1日目", "C98 2日目", "C98 3日目", "C98 4日目"]
@@ -113,7 +113,7 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
         }
     }
 
-    //textFieldがタップされた(editが開始された)
+    // textFieldがタップされた(editが開始された)
     func textFieldDidBeginEditing(_ textField: UITextField) {
         NotificationCenter.default.removeObserver(self)
         if textField == twitterTextField || textField == memoTextField {
@@ -128,7 +128,6 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
         } else {
             print("twitterTextField is not selected")
             if self.view.frame.origin.y != 0 {
-//                self.view.frame.origin.y = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseInOut, animations: {
                     self.view.frame.origin.y = 0
                 }, completion: nil)
@@ -193,9 +192,9 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let selectedImage = info[.originalImage] as? UIImage {
             ImgImageView.image = selectedImage
-            //imageViewにカメラロールから選んだ画像を表示する
+            // imageViewにカメラロールから選んだ画像を表示する
         }
-        self.dismiss(animated: true) //画像をImageViewに表示したらアルバムを閉じる
+        self.dismiss(animated: true) // 画像をImageViewに表示したらアルバムを閉じる
     }
 
     // 画像選択がキャンセルされた時に呼ばれる
@@ -203,7 +202,7 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
         self.dismiss(animated: true, completion: nil)
     }
 
-    //UserDefaults のインスタンス生成
+    // UserDefaults のインスタンス生成
     let userDefaults = UserDefaults.standard
 
     // ドキュメントディレクトリの「ファイルURL」（URL型）定義
@@ -221,23 +220,23 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
         }
     }
 
-    //画像を保存する関数の部分
+    // 画像を保存する関数の部分
     func saveImage(image: UIImage, filename: String) {
         createLocalDataFile(filename: filename)
-        //pngで保存する場合
+        // .pngで保存する場合
         let pngImageData = image.pngData()
         do {
             try pngImageData!.write(to: documentDirectoryFileURL!)
-            //②「Documents下のパス情報をUserDefaultsに保存する」
+            // Documents下のパス情報をUserDefaultsに保存する
             userDefaults.set(documentDirectoryFileURL, forKey: filename)
             print(filename)
         } catch {
-            //エラー処理
+            // エラー処理
             print("エラー")
         }
     }
 
-    //キーボードが表示時に画面をずらす。
+    // キーボードが表示時に画面をずらす。
     @objc func keyboardWillShow(notification: NSNotification) {
         print("keyboardWillShowを実行")
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
@@ -260,7 +259,8 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
             }
         }
     }
-    //キーボードが降りたら画面を戻す
+    
+    // キーボードが降りたら画面を戻す
     @objc func keyboardWillHide(_ notification: Notification?) {
         print("keyboardWillHideを実行")
         if self.view.frame.origin.y != 0 {
@@ -270,7 +270,6 @@ class ModelViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
-    //戻るSegue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if (segue.identifier == "BackSegue") {

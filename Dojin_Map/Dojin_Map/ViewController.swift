@@ -32,23 +32,23 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
 
         circles = userDefaults.array(forKey: "circles") as! [[String]]
 
-        creatScrollView()
-        creatNavigationBar()
+        createScrollView()
+        createNavigationBar()
         tableView.tableFooterView = UIView()
     }
 
-    func creatNavigationBar() {
-        //navigationBarの生成
+    func createNavigationBar() {
+        // navigationBarの生成
         navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 33, width: self.view.frame.size.width, height: 60))
-        //navigationItemの生成
+        // navigationItemの生成
         let navigationItem: UINavigationItem = UINavigationItem(title: "同人マップ")
-        //ナビゲーションバー右のボタンを設定
+        // ナビゲーションバー右のボタンを設定
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "＋", style: UIBarButtonItem.Style.plain, target: self, action: #selector(barButtonTapped(_:)))
 
         navigationItem.leftBarButtonItem = self.editButtonItem
-        //Viewにナビゲーションバーを追加
+        // Viewにナビゲーションバーを追加
         self.view.addSubview(navigationBar)
-        //ナビゲーションバーにアイテムを追加
+        // ナビゲーションバーにアイテムを追加
         navigationBar.pushItem(navigationItem, animated: true)
     }
 
@@ -58,22 +58,22 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         self.performSegue(withIdentifier: "ModelSegue", sender: self)
     }
 
-    func creatScrollView() {
-        //MainScrollViewの画面上の大きさを指定
+    func createScrollView() {
+        // MainScrollViewの画面上の大きさを指定
         MainScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
-        //MainScrollViewのページ数(配列的意味のサイズ)(普通に実質的に入る容量のサイズ)を横向き縦向きそれぞれに指定
+        // MainScrollViewのページ数(配列的意味のサイズ)(普通に実質的に入る容量のサイズ)を横向き縦向きそれぞれに指定
         MainScrollView.contentSize = CGSize(width: self.view.frame.size.width * 2, height: self.view.frame.size.height)
         MainScrollView.contentOffset.x = CGFloat(mainScrollcoor)
-        //MainScrollViewの画面遷移をMainScrollView自身で行う
+        // MainScrollViewの画面遷移をMainScrollView自身で行う
         MainScrollView.delegate = self
-        //MainScrollViewの水平方向のスクロールバーを非表示
+        // MainScrollViewの水平方向のスクロールバーを非表示
         MainScrollView.showsHorizontalScrollIndicator = false
-        //MainScrollViewでページ単位でスクロールする
+        // MainScrollViewでページ単位でスクロールする
         MainScrollView.isPagingEnabled = true
-        //ViewControllerにMainScrollViewをSubviewとして追加
+        // ViewControllerにMainScrollViewをSubviewとして追加
         self.view.addSubview(MainScrollView)
-        //MainScrollViewの1ページ目に画像を追加(ページ指定はwidthの幅)
-        creatMapScrollView()
+        // MainScrollViewの1ページ目に画像を追加(ページ指定はwidthの幅)
+        createMapScrollView()
 
         self.tableView = {
             let tableView = UITableView(frame: CGRect(x: self.view.frame.size.width, y: 76, width: self.view.frame.size.width, height: self.view.frame.size.height - 176), style: .plain)
@@ -101,7 +101,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         self.view.addSubview(pageControl)
     }
 
-    func creatMapScrollView() {
+    func createMapScrollView() {
         mapScrollView = UIScrollView(frame: CGRect(x: 0, y: 76, width: self.view.frame.size.width, height: self.view.frame.size.height - 176))
         mapScrollView.contentSize = CGSize(width: 3313, height: 4683)
         mapScrollView.delegate = self
@@ -131,7 +131,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
             ?? UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
 
-        //イベントのラベルをcellに追加
+        // イベントのラベルをcellに追加
         let circleLabel = UILabel() // ラベルの生成
         circleLabel.frame = CGRect(x: 10, y: 0, width: UIScreen.main.bounds.size.width, height: 44) // 位置とサイズの指定
         circleLabel.textAlignment = NSTextAlignment.left // 横揃えの設定
@@ -140,13 +140,13 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         circleLabel.font = UIFont(name: "HiraKakuProN-W6", size: 17) // フォントの設定
         cell.addSubview(circleLabel) // ラベルの追加
 
-        //サークル名を追加
+        // サークル名を追加
         cell.textLabel?.text = circles[indexPath.row][1]
 
-        //説明やつ
+        // 説明やつ
         cell.detailTextLabel?.text = circles[indexPath.row][5]
 
-        //場所のラベルを追加
+        // 場所のラベルを追加
         let placeLabel = UILabel() // ラベルの生成
         placeLabel.frame = CGRect(x: UIScreen.main.bounds.size.width - 110, y: 28, width: 100, height: 44) // 位置とサイズの指定
         placeLabel.textAlignment = NSTextAlignment.right // 横揃えの設定
@@ -170,20 +170,20 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         return 100
     }
 
-    //セルの編集許可
+    // セルの編集許可
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
     {
         return true
     }
 
     override func setEditing(_ editing: Bool, animated: Bool) {
-        //override前の処理を継続してさせる
+        // override前の処理を継続してさせる
         super.setEditing(editing, animated: animated)
-        //tableViewの編集モードを切り替える
-        tableView.isEditing = editing //editingはBool型でeditButtonに依存する変数
+        // tableViewの編集モードを切り替える
+        tableView.isEditing = editing // editingはBool型でeditButtonに依存する変数
     }
 
-    //スワイプしたセルを削除
+    // スワイプしたセルを削除
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
             print("indexPath.row = ", indexPath.row)

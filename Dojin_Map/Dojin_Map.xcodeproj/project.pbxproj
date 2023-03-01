@@ -16,7 +16,6 @@
 		3394D82823EFBD98009390CA /* Dojin_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D82723EFBD98009390CA /* Dojin_MapTests.swift */; };
 		3394D83323EFBD98009390CA /* Dojin_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D83223EFBD98009390CA /* Dojin_MapUITests.swift */; };
 		33B9039023F1837A004CBA1A /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B9038F23F1837A004CBA1A /* ModelViewController.swift */; };
-		33B9039223F3BEEE004CBA1A /* circle.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33B9039123F3BEEE004CBA1A /* circle.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		3394D83223EFBD98009390CA /* Dojin_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dojin_MapUITests.swift; sourceTree = "<group>"; };
 		3394D83423EFBD98009390CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B9038F23F1837A004CBA1A /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
-		33B9039123F3BEEE004CBA1A /* circle.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = circle.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +101,11 @@
 		3394D81123EFBD96009390CA /* Dojin_Map */ = {
 			isa = PBXGroup;
 			children = (
-				33B9039123F3BEEE004CBA1A /* circle.csv */,
 				3394D81223EFBD96009390CA /* AppDelegate.swift */,
 				3394D81423EFBD96009390CA /* ViewController.swift */,
-				3394D81623EFBD96009390CA /* Main.storyboard */,
 				33599C8523FC18E500D71658 /* CircleViewController.swift */,
 				33B9038F23F1837A004CBA1A /* ModelViewController.swift */,
+				3394D81623EFBD96009390CA /* Main.storyboard */,
 				3394D81923EFBD98009390CA /* Assets.xcassets */,
 				3394D81B23EFBD98009390CA /* LaunchScreen.storyboard */,
 				3394D81E23EFBD98009390CA /* Info.plist */,
@@ -240,7 +237,6 @@
 			files = (
 				3394D81D23EFBD98009390CA /* LaunchScreen.storyboard in Resources */,
 				3394D81A23EFBD98009390CA /* Assets.xcassets in Resources */,
-				33B9039223F3BEEE004CBA1A /* circle.csv in Resources */,
 				3394D81823EFBD96009390CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

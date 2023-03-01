@@ -37,7 +37,7 @@ class CircleViewController: UIViewController, UIScrollViewDelegate {
 
         twitterButton.setTitle("\(circles[tableCellNum][6])", for: .normal)
 
-        //Documentsディレクトリのpathを得る
+        // Documentsディレクトリのpathを得る
         let filePath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last
         let fileURL = URL(fileURLWithPath: filePath!).appendingPathComponent("\(circles[tableCellNum][7]).png")
         print(fileURL.path)
@@ -52,7 +52,6 @@ class CircleViewController: UIViewController, UIScrollViewDelegate {
         memoScrollView.addSubview(imageView)
     }
 
-    //ここから下はとりあえずコピペしただけ
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         if let size = imageView.image?.size {
@@ -74,8 +73,6 @@ class CircleViewController: UIViewController, UIScrollViewDelegate {
 
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
         print("end zoom")
-        //ズームのタイミングでcontentInsetを更新
-        //updateScrollInset()
     }
 
     func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
@@ -83,8 +80,8 @@ class CircleViewController: UIViewController, UIScrollViewDelegate {
     }
 
     func updateScrollInset() {
-        //imageViewの大きさからcontentInsetを再計算
-        //0を下回らないようにする
+        // imageViewの大きさからcontentInsetを再計算
+        // 0を下回らないようにする
         memoScrollView.contentInset = UIEdgeInsets(
             top: max((memoScrollView.frame.height - imageView.frame.height) / 2, 0),
             left: max((memoScrollView.frame.width - imageView.frame.width) / 2, 0),
